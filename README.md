@@ -25,14 +25,18 @@ To test performance on potentially nonlinear relationships and store-level quirk
     Hyperparameters: n_estimators, max_depth, min_samples_split
 
     Achieved robust performance (~0.79–0.81 R²)
+    
     Naturally handled categorical spillover and localized patterns
+    
     Slightly less interpretable but less prone to overfitting than unregularized linear models
 
 Linear Regression Using Sklearn :
-A separate baseline linear regression model was built using sklearn to assess how well a standard closed-form solution performs on this structured dataset. This model was not used to validate the manual implementation, but rather to explore how a well-established method behaves under the same time-aware constraints.
+A separate baseline linear regression model was built using sklearn to assess how well a standard closed-form solution performs on this structured dataset. This model was used to explore how a well-established method behaves under the same time-aware constraints.
 
     Delivered consistently strong performance on test data
+    
     Benefited from proper scaling and a clean, interpretable feature set
+    
     Demonstrated that simple models can perform exceptionally well in retail settings with seasonal and structured data
 
 Manual Linear Regression (Gradient Descent) :
